@@ -1,0 +1,11 @@
+main {
+    text-align: center;
+    justify-content: center;
+}
+input{
+    width: 40px;
+}
+h3{
+    font-size: 16px;
+    margin: 1px;
+}
