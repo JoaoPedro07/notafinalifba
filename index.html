@@ -1,18 +1,32 @@
-<html>
-    <head>
-        <meta charset="urf-8">
-        <link rel="stylesheet" href="estilo.css">
-        <script src="funcional.js"></script>
-    </head>
-    <body>
-        <main>
-            <h3>Insira sua média:</h3>
-            <section>
-                <input type="text" id="media">
-                <button id="calculo" onclick="calacularNotaNecessaria()">Calcular</button>
-                <h1 id="resultado"></h1>
-            </section>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="src/ico/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="funcional.js"></script>
+    <title>Nota final</title>
+</head>
+<body class="bg-[grey] flex flex-col justify-center items-center min-h-screen mx-auto max-w-md">
 
-        </main>
-    </body>
+    <h1 class="text-5xl font-bold text-white m-6">Nota Final</h1>
+
+    <main class="bg-stone-200 mx-auto max-w-md py-8 px-10 rounded-lg">
+            <div class="mb-4">
+                <label for="user">Insira sua Média</label>
+                <input type="text" id="media" class="appearance-none block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none">
+            </div>
+            <div class="mb-4">
+                <button type="submit" class="inline-block w-full px-8 py-4 leading-none text-white bg-[grey] hover:bg-[#343434] font-semibold rounded"onclick="calacularNotaNecessaria()">Calcular</button>
+            </div>
+            <div class="mb-4">
+                <h2 id="resultado"></h2>
+            </div>
+    </main>
+    <footer class="text-white">
+        <p>Desenvolvido por Pedro Peripércias</p>
+    </footer>
+</body>
 </html>
